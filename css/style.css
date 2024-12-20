@@ -1,0 +1,337 @@
+/* Général */
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffeef6;
+    color: #4a4a4a;
+}
+
+/* Header */
+header {
+    background-color: #d14781; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ff69b4;
+    font-size: 40px;
+}
+.navbar-brand:hover{
+    text-decoration: underline; 
+    color: #ffb6c1;
+}
+
+#nav-active{
+    color: #d14781;
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav-link {
+    margin-right: 1px;
+    color: #ff69b4;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    text-decoration: underline; 
+    color: #ffb6c1;
+}
+
+/*main*/
+main {
+    padding: 100px 15%; 
+    text-align: center;
+    background: linear-gradient(135deg, #ffb6c1, #ffeef6);
+    margin-bottom: 50px;
+    margin: 50px;
+    font-size: 20px;
+}
+main:hover {
+    transform: scale(1.02); 
+}
+/*accueil*/
+#nom {
+    font-size: 50px;
+    color: #ff69b4;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#niveau {
+    font-size: 30px;
+    color: #d14781;
+    margin-bottom: 30px;
+}
+
+
+a {
+    color: #ff69b4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/*diplome et competence*/
+.tab-diplome-competence{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+
+}
+.tab-diplome-competence td {
+    padding: 15px;
+    border: 1px solid #ff99cc;
+}
+.tab-diplome-competence img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ff99cc;
+    border-radius: 10px;
+}
+.tab-diplome-competence p{
+    color:#d14781;
+    text-decoration: underline;
+}
+/*a propos*/
+#img-personnelle {
+    display: block; /* comporte comme un para pour faciliter le center*/
+    margin: 20px auto;
+    width: 350px; 
+    height: 350px; 
+    border-radius: 50%; /* cerculer les bornes de l'img */
+    border: 1px solid #ff66b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#img-personnelle:hover{
+    transform: scale(1.02); 
+
+}
+/*vie associatif*/
+.img-xtreme {
+    width: 22%;
+    height: auto;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#famille-xtreme {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+video {
+
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.img-xtreme:hover{
+    transform: scale(1.02); 
+}
+#famille-xtreme:hover{
+    transform: scale(1.02); 
+}
+video:hover{
+    transform: scale(1.02); 
+}
+/*formation*/
+#table-formation {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#table-formation td {
+    padding: 15px;
+    text-align: left;
+  
+}
+
+#table-formation img.img-formation {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#table-formation img.img-formation:hover{
+    transform: scale(1.02); 
+}
+/*matiere*/
+.matiere{
+    font-size: x-large;
+}
+/*passion*/
+#main-passion img {
+    width: 30%;
+    height: auto;
+    margin: 10px auto; /* 'auto' pour centrer horizontalement */
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#main-passion img:hover{
+    transform: scale(1.02); 
+}
+#main-passion
+{
+    text-align: left;
+
+}
+/*contact*/
+h2 {
+    text-align: center;
+    color:#d14781;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ff66b3; 
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #e6b3cc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    background-color: #fff0f5; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ff66b3; 
+}
+
+
+input[type="submit"] {
+    background-color: #ff4da6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #ffb6c1; 
+}
+/*temoignage*/
+#img-compus {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#img-compus:hover{
+    transform: scale(1.02); 
+}
+#temoignage-nom {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ff1493;
+    font-size: 20px;
+}
+/*quizz*/
+
+#main_quizz{
+    padding: 150px;
+    margin: 50px auto;
+    background-size: 300% 300%;
+    max-width: 80%;
+    border-radius: 15px;
+    color: #f4f4f9;
+    background-image: url(../images/back2.webp);
+    background-size: cover  ;
+}
+
+  
+/*footer*/
+footer {
+    background-color: #d14781;
+    color: white;
+    padding: 10px 5%;
+    font-size: 20px; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+footer table {
+    width: 100%;
+    margin: 10px 0 5px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+footer th, footer td {
+    padding: 5px; 
+}
+
+footer th {
+    font-size: 20px;
+    border-bottom: 1px solid #ffd9e0;
+}
+
+footer a {
+    color: white;
+}
+
+footer a img {
+    margin: 5px;
+    transition: transform 0.3s;
+}
+
+footer a img:hover {
+    transform: scale(1.5);
+
+}
+
+
+.map iframe {
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 175%;
+    
+    
+}
+
+
+
+

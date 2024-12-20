@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Quizz</title>
+    <link rel="stylesheet" href="../css/quizz.css">
+</head>
+<body>
+    <h1>Quizz Animaux et Nature</h1>
+        <fieldset>
+            <legend>Animaux</legend>
+            <fieldset>
+                <legend>question 1</legend> <!--a-->
+                <div class="question1" id="question1" data-correct-answer="a">
+                    
+                    <h3>Quel animal peut vivre jusqu'à 200 ans ?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q1" value="a" onclick=" lockOptions('q1');selection('torture')">
+                            <img src="../images/question1_1.jpg" alt="Tortue-géante" id="torture" class="option-image">
+                            <p>Tortue Geante</p>
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="b" onclick=" lockOptions('q1');selection('elefant')">
+                            <img src="../images/question1_2.avif" alt="elefant" id="elefant" class="option-image">
+                            <p>Elefant</p>
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="c" onclick=" lockOptions('q1');selection('requin')">
+                            <img src="../images/question1_3.jpg" alt="Requin" id="requin" class="option-image">
+                            <p>Requin</p>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>question 2</legend> <!--a-->
+                <div class="question2" id="question2" data-correct-answer="a">
+                    <h3>Quel oiseau est connu pour ne pas voler mais courir très vite ?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q2" value="a" onclick="lockOptions('q2');selection('autruche') ">
+                            <img src="../images/question2_1.jpg" alt="autruche" id="autruche" class="option-image">
+                            <p>Autruche</p>
+                            
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q2" value="b" onclick="lockOptions('q2');selection('manchot')">
+                            <img src="../images/question2-2.jpg" alt="manchot" id="manchot" class="option-image">
+                            <p>Manchot</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q2" value="c" onclick="lockOptions('q2');selection('pelican')">
+                            <img src="../images/question2_3.jpg" alt="pelican" id="pelican" class="option-image">
+                            <p>Pelican</p>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>question 3</legend><!--b-->
+                <div class="question3" id="question3" data-correct-answer="b">
+                    <h3>Quel est le plus grand reptile vivant ?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q3" value="a" onclick="lockOptions('q3');selection('anaconda')">
+                            <img src="../images/question3_1.jpg" alt="anaconda" id="anaconda" class="option-image">
+                            <p>Anaconda</p>
+                            
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q3" value="b" onclick="lockOptions('q3');selection('crocodile')">
+                            <img src="../images/question3_2.jpg" alt="crocodile_marin" id="crocodile" class="option-image">
+                            <p>Crocodile Marin</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q3" value="c" onclick="lockOptions('q3');selection('varan')">
+                            <img src="../images/question3_3.webp" alt="varan_de_komodo" id="varan" class="option-image">
+                            <p>Varan De Komodo</p>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>question 4</legend> <!--a-->
+                <div class="question4" id="question4" data-correct-answer="a">
+                    <h3>Quel mammifère peut dormir debout ?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q4" value="a" onclick="lockOptions('q4');selection('cheval')">
+                            <img src="../images/question4_1.jpg" alt="cheval" id="cheval" class="option-image">
+                            <p>Cheval</p>
+                            
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q4" value="b" onclick="lockOptions('q4');selection('chameau')">
+                            <img src="../images/question4_2.jpg" alt="chameau" id="chameau" class="option-image">
+                            <p>Chameau</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q4" value="c" onclick="lockOptions('q4');selection('girafe')">
+                            <img src="../images/question4_3.webp" alt="girafe" id="girafe" class="option-image">
+                            <p>Girafe</p>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            
+
+        </fieldset>
+        <fieldset>
+            <legend>Nature</legend>
+            <fieldset>
+                <legend>question 1</legend> <!--a-->
+                <div class="question5" id="question5" data-correct-answer="a">
+                    <h3>Quelle est la plus haute montagne du monde ?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q5" value="a" onclick="lockOptions('q5');selection('mont_everest')">
+                            <img src="../images/nature1-1.jpg" alt="mont_everest" id="mont_everest" class="option-image">
+                            <p>Mont Everest</p>
+                            
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q5" value="b" onclick="lockOptions('q5');selection('mont_kilimandjaro')">
+                            <img src="../images/nature1-2.jpg" alt="mont_kilimandjaro" id="mont_kilimandjaro" class="option-image">
+                            <p>Mont Kilimandjaro</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q5" value="c" onclick="lockOptions('q5');selection('mont_blanc')">
+                            <img src="../images/nature1-3.jpg" alt="mont_blanc" id="mont_blanc" class="option-image">
+                            <p>Mont Blanc</p>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>question 2</legend> <!--b-->
+                <div class="question6" id="question6" data-correct-answer="b">
+                    <h3>Quel désert est le plus grand du monde ?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q6" value="a" onclick="lockOptions('q6');selection('sahara')">
+                            <img src="../images/nature2-1.jpg" alt="sahara" id="sahara" class="option-image">
+                            <p>Sahara</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q6" value="b" onclick="lockOptions('q6');selection('antarctique')">
+                            <img src="../images/nature2-2.jpg" alt="antarctique" id="antarctique" class="option-image">
+                            <p>Antarctique</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q6" value="c" onclick="lockOptions('q6');selection('desert_de_gobi')">
+                            <img src="../images/nature2-3.jpg" alt="desert de gobi" id="desert_de_gobi" class="option-image">
+                            <p>Désert de Gobi</p>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>question 3</legend> <!--b-->
+                <div class="question7" id="question7" data-correct-answer="b">
+                    <h3>Quelle est la planète surnommée "la planète bleue"</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q7" value="a" onclick="lockOptions('q7');selection('mars')">
+                            <img src="../images/nature3-1.jpg" alt="mars" id="mars" class="option-image">
+                            <p>Mars</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q7" value="b" onclick="lockOptions('q7');selection('terre')">
+                            <img src="../images/nature3-2.jpg" alt="terre" id="terre" class="option-image">
+                            <p>Terre</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q7" value="c" onclick="lockOptions('q7');selection('neptune_planete')">
+                            <img src="../images/nature3-3.jpg" alt="neptune" id="neptune_planete" class="option-image">
+                            <p>Neptune</p>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>question 4</legend>
+                <div class="question8" id="question8" data-correct-answer="b"> <!--b-->
+                    <h3>Quelle est la plus longue rivière du monde ?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q8" value="a" onclick="lockOptions('q8');selection('nil')">
+                            <img src="../images/nature4-1.jpeg" alt="nil" id="nil" class="option-image">
+                            <p>Nil</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q8" value="b" onclick="lockOptions('q8');selection('amazon')">
+                            <img src="../images/nature4-2.jpg" alt="amazon" id="amazon" class="option-image">
+                            <p>Amazone</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q8" value="c" onclick="lockOptions('q8');selection('mississippi')">
+                            <img src="../images/nature4-3.jpg" alt="mississippi" id="mississippi" class="option-image">
+                            <p>Mississippi</p>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            
+
+        </fieldset>
+        <fieldset>
+            <legend>Plantes</legend>
+            <fieldset>
+                <legend>question 1</legend> <!--a-->
+                <div class="question9" id="question9" data-correct-answer="a">
+                    <h3>Quelle plante carnivore est connue pour capturer des insectes ?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q9" value="a" onclick="lockOptions('q9');selection('dionee')">
+                            <img src="../images/plante1_1.jpg" alt="dionee" id="dionee" class="option-image">
+                            <p>Dionée</p>
+                            
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q9" value="b" onclick="lockOptions('q9');selection('orchidee')">
+                            <img src="../images/plante1_2.webp" alt="orchidee" id="orchidee" class="option-image">
+                            <p>Orchidée</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q9" value="c" onclick="lockOptions('q9');selection('aloe_vera')">
+                            <img src="../images/plante1_3.jpg" alt="aloe_vera" id="aloe_vera" class="option-image">
+                            <p> Aloe Vera</p>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>question 2</legend> <!--c-->
+                <div class="question10" id="question10" data-correct-answer="c">
+                    <h3>Quel arbre produit les glands ?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q10" value="a" onclick="lockOptions('q10');selection('erable')">
+                            <img src="../images/plante2_1.jpg" alt="erable" id="erable" class="option-image">
+                            <p>Érable</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q10" value="b" onclick="lockOptions('q10');selection('pin')">
+                            <img src="../images/plante2_2.jpg" alt="pin" id="pin" class="option-image">
+                            <p>Pin</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q10" value="c" onclick="lockOptions('q10');selection('chene')">
+                            <img src="../images/plante2_3.jpg" alt="chene" id="chene" class="option-image">
+                            <p>Chêne</p>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>question 11</legend> <!--b-->
+                <div class="question11" id="question11" data-correct-answer="b">
+                    <h3>Quelle plante peut survivre des mois sans eau dans le désert ?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q11" value="a" onclick="lockOptions('q11');selection('bambou')">
+                            <img src="../images/plante3_1.jpg" alt="bambou" id="bambou" class="option-image">
+                            <p>Bambou</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q11" value="b" onclick="lockOptions('q11');selection('cactus')">
+                            <img src="../images/plante3_2.jpg" alt="cactus" id="cactus" class="option-image">
+                            <p>Cactus</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q11" value="c" onclick="lockOptions('q11');selection('palmier')">
+                            <img src="../images/plante3_3.jpg" alt="palmier" id="palmier" class="option-image">
+                            <p>Palmier</p>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>question 12</legend>
+                <div class="question12" id="question12" data-correct-answer="c"> <!--c-->
+                    <h3>Quelle est la plus grande fleur du monde ?</h3>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q12" value="a" onclick="lockOptions('q12');selection('tournesol')">
+                            <img src="../images/plante4_1.jpg" alt="tournesol" id="tournesol" class="option-image">
+                            <p>Tournesol</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q12" value="b" onclick="lockOptions('q12');selection('fleur_orchidee')">
+                            <img src="../images/plante1_2.webp" alt="amazon" id="fleur_orchidee" class="option-image">
+                            <p>Orchidée</p>
+                        </label>
+                
+                        <label>
+                            <input type="radio" name="q12" value="c" onclick="lockOptions('q12');selection('rafflesia')">
+                            <img src="../images/plante4_3.jpg" alt="rafflesia" id="rafflesia" class="option-image">
+                            <p>Rafflesia</p>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            
+
+        </fieldset>
+        <input type="button" value="decouvrir votre score" onclick="TotalScore()">
+        <script type="text/javascript" src="../js/quizz.js"></script>
+
+</body>
+
+</html>
